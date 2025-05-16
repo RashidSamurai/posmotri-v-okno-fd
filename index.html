@@ -20,7 +20,7 @@
           <fieldset class="search-form__fieldset">
             <h2 class="search-form__fieldset-title">Город</h2>
             <label class="search-form__label">
-              <span class="search-form__label-text visually-hidden">Город</span>
+              <span class="search-form__label-text visually-hidden"></span>
               <input
                 type="text"
                 placeholder="Санкт Петербург, например"
@@ -80,9 +80,10 @@
         </div>
       </section>
     </main>
-
+    
     <!-- ТЕМПЛЕЙТЫ -->
-
+    
+    <!-- Шаблон пункта списка с карточкой видео — в него подставляются данные для создания нужного количества карточек. -->
     <template class="preloader-template">
       <div class="preloader">
         <div class="preloader-chasing-squares">
@@ -93,7 +94,8 @@
         </div>
       </div>
     </template>
-
+    
+    <!-- Шаблон прелоадера — пока данные загружаются, для зон, где будет контент, создаются экземпляры прелоадера. Когда контент готов, прелоадеры убираются. -->
     <template class="cards-list-item-template">
       <li class="content__list-item">
         <a href="#0" class="content__card-link">
@@ -107,15 +109,17 @@
         </a>
       </li>
     </template>
+    <!-- Шаблон кнопки «Показать ещё» — кнопка ставится в конец списка карточек каждый раз, когда доступны дополнительные видео. Нажатие на кнопку подгружает пять дополнительных карточек. -->
     <template class="more-button-template">
       <button class="button more-button">Показать еще</button>
     </template>
-
+    
+    <!-- Шаблон блока с ошибкой — вставляется на страницу при возникновении ошибки, текст на шаблоне зависит от типа ошибки. -->
     <template class="error-template">
       <div class="error">
-        <h2 class="error__title">Из этого города нет видео :(</h2>
+        <h2 class="error__title">Из этого города нет видео :</h2>
       </div>
     </template>
     <script src="./scripts/script.js"></script>
   </body>
-</html>
+  </html>
