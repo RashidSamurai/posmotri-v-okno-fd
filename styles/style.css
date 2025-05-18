@@ -149,6 +149,10 @@ ol {
   border-left: 1px solid transparent;
 }
 
+.search-form__textfield:active {
+  border: 1px solid #fff;
+}
+
 .search-form__checkbox-list {
   display: flex;
   gap: 15px;
